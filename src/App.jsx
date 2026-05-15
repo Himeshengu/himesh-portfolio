@@ -18,6 +18,23 @@ import {
 
 const projects = [
   {
+    title: "MedGAN Studio — Distributed GAN Inference System",
+    type: "Full Stack Generative AI",
+    desc: "Built a full-stack AI-powered medical imaging platform for synthetic MRI, CT Scan, X-Ray, and retinal image generation using distributed GAN inference pipelines, FastAPI microservices, React dashboards, and MongoDB Atlas cloud storage.",
+    tech: [
+      "PyTorch",
+      "GANs",
+      "FastAPI",
+      "React",
+      "MongoDB Atlas",
+      "Docker",
+      "Python"
+    ],
+    github:
+      "https://github.com/Himeshengu/MedGAN-Studio-Distributed-GAN-Inference-Synthetic-Medical-Imaging-System",
+  },
+
+  {
     title: "RAG Benchmarking System",
     type: "AI / LLM Systems",
     desc: "A benchmarking framework for evaluating RAG systems across accuracy, latency, cost-efficiency, response quality, and explainability.",
@@ -25,6 +42,7 @@ const projects = [
     github:
       "https://github.com/Himeshengu/RAG-System-Benchmarking-with-Explainability-and-Hallucination-Guardrails",
   },
+
   {
     title: "YOLOv8 License Plate Detection",
     type: "Computer Vision Research",
@@ -32,6 +50,7 @@ const projects = [
     tech: ["YOLOv8", "EfficientNet B7", "TensorFlow", "Python"],
     github: "https://github.com/Himeshengu/License-Plate-Identification",
   },
+
   {
     title: "Multi-Class Retinal Disease Detection",
     type: "Medical AI Research",
@@ -39,6 +58,7 @@ const projects = [
     tech: ["GAN", "PyTorch", "OpenCV", "TensorFlow"],
     github: "https://github.com/Himeshengu",
   },
+
   {
     title: "Needs On Wheels",
     type: "Full Stack E-Commerce",
@@ -206,7 +226,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-cyan-400 text-black px-4 py-3 md:px-5 rounded-full font-semibold shadow-[0_0_25px_rgba(34,211,238,0.45)] hover:bg-cyan-300 transition"
-        
+
         >
           <FileText size={18} />
           Resume
@@ -214,47 +234,47 @@ function App() {
 
         {/* Theme Toggle */}
         <button
-        onClick={() => setDarkMode(!darkMode)}
-        className="fixed bottom-6 left-6 z-50 inline-flex items-center gap-2 border border-white/10 bg-black/40 backdrop-blur-2xl px-4 py-3 rounded-full hover:bg-white/10 transition"
+          onClick={() => setDarkMode(!darkMode)}
+          className="fixed bottom-6 left-6 z-50 inline-flex items-center gap-2 border border-white/10 bg-black/40 backdrop-blur-2xl px-4 py-3 rounded-full hover:bg-white/10 transition"
         >
           {darkMode ? <Sun size={18} /> : <Moon size={18} />}
         </button>
 
         {/* Navbar */}
         <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 mt-3 rounded-2xl bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_0_35px_rgba(34,211,238,0.08)] overflow-hidden">
-  <div className="px-6 py-4 flex justify-between items-center">
-    <h1 className="font-bold text-xl text-white">
-      Himesh<span className="text-cyan-400">.</span>
-    </h1>
+          <div className="px-6 py-4 flex justify-between items-center">
+            <h1 className="font-bold text-xl text-white">
+              Himesh<span className="text-cyan-400">.</span>
+            </h1>
 
-    <div className="hidden md:flex gap-6 text-sm text-gray-300">
-      <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
-      <a href="#publications" className="hover:text-cyan-400 transition">Publications</a>
-      <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
-      <a href="#experience" className="hover:text-cyan-400 transition">Experience</a>
-      <a href="#education" className="hover:text-cyan-400 transition">Education</a>
-      <a href="#contact" className="hover:text-cyan-400 transition">Contact</a>
-    </div>
+            <div className="hidden md:flex gap-6 text-sm text-gray-300">
+              <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
+              <a href="#publications" className="hover:text-cyan-400 transition">Publications</a>
+              <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
+              <a href="#experience" className="hover:text-cyan-400 transition">Experience</a>
+              <a href="#education" className="hover:text-cyan-400 transition">Education</a>
+              <a href="#contact" className="hover:text-cyan-400 transition">Contact</a>
+            </div>
 
-    <button
-      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-      className="md:hidden text-white"
-    >
-      {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
-    </button>
-  </div>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden text-white"
+            >
+              {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+            </button>
+          </div>
 
-  {mobileMenuOpen && (
-    <div className="md:hidden px-6 pb-5 flex flex-col gap-4 text-gray-300 text-sm">
-      <a onClick={() => setMobileMenuOpen(false)} href="#projects">Projects</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#publications">Publications</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#skills">Skills</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#experience">Experience</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#education">Education</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#contact">Contact</a>
-    </div>
-  )}
-</nav>
+          {mobileMenuOpen && (
+            <div className="md:hidden px-6 pb-5 flex flex-col gap-4 text-gray-300 text-sm">
+              <a onClick={() => setMobileMenuOpen(false)} href="#projects">Projects</a>
+              <a onClick={() => setMobileMenuOpen(false)} href="#publications">Publications</a>
+              <a onClick={() => setMobileMenuOpen(false)} href="#skills">Skills</a>
+              <a onClick={() => setMobileMenuOpen(false)} href="#experience">Experience</a>
+              <a onClick={() => setMobileMenuOpen(false)} href="#education">Education</a>
+              <a onClick={() => setMobileMenuOpen(false)} href="#contact">Contact</a>
+            </div>
+          )}
+        </nav>
 
         {/* Hero */}
         <motion.section
@@ -409,7 +429,7 @@ function App() {
 
             <div className="space-y-5">
               <p className={`${textClass} leading-8 text-lg`}>
-              As a Graduate Student in Computer Science at Northern Arizona University, I am passionate about designing scalable, data-driven systems that transform complex data into actionable business insights and intelligent solutions.
+                As a Graduate Student in Computer Science at Northern Arizona University, I am passionate about designing scalable, data-driven systems that transform complex data into actionable business insights and intelligent solutions.
 
               </p>
               <p className={`${textClass} leading-8 text-lg`}>
@@ -708,11 +728,11 @@ function App() {
                   className="w-full bg-black/40 border border-zinc-800 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400 transition"
                 ></textarea>
                 <a
-                href="mailto:enguhimesh01@gmail.com"
-                className="inline-block bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-300 transition shadow-[0_0_20px_rgba(34,211,238,0.35)]"
+                  href="mailto:enguhimesh01@gmail.com"
+                  className="inline-block bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-300 transition shadow-[0_0_20px_rgba(34,211,238,0.35)]"
                 >
                   Send Message
-                  </a>
+                </a>
               </form>
             </div>
           </div>

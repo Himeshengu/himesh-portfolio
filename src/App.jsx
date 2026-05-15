@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Mail, FileText, Sun, Moon } from "lucide-react";
+import { Mail, FileText, Sun, Moon, Menu, X } from "lucide-react";
 import {
   FaPython,
   FaAws,
@@ -118,6 +118,7 @@ const fadeUp = {
 function App() {
   const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1600);
@@ -221,39 +222,39 @@ function App() {
 
         {/* Navbar */}
         <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 mt-3 rounded-2xl bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_0_35px_rgba(34,211,238,0.08)] overflow-hidden">
-          <div className="px-6 py-4 flex justify-between items-center">
-            <h1 className="font-bold text-xl text-white">
-              Himesh<span className="text-cyan-400">.</span>
-            </h1>
+  <div className="px-6 py-4 flex justify-between items-center">
+    <h1 className="font-bold text-xl text-white">
+      Himesh<span className="text-cyan-400">.</span>
+    </h1>
 
-            <div className="flex gap-3 md:gap-6 text-xs md:text-sm text-gray-300 overflow-x-auto">
-              <a href="#projects" className="hover:text-cyan-400 transition">
-                Projects
-              </a>
-              <a
-                href="#publications"
-                className="hover:text-cyan-400 transition"
-              >
-                Publications
-              </a>
-              <a href="#skills" className="hover:text-cyan-400 transition">
-                Skills
-              </a>
-              <a
-                href="#experience"
-                className="hover:text-cyan-400 transition"
-              >
-                Experience
-              </a>
-              <a href="#education" className="hover:text-cyan-400 transition">
-                Education
-              </a>
-              <a href="#contact" className="hover:text-cyan-400 transition">
-                Contact
-              </a>
-            </div>
-          </div>
-        </nav>
+    <div className="hidden md:flex gap-6 text-sm text-gray-300">
+      <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
+      <a href="#publications" className="hover:text-cyan-400 transition">Publications</a>
+      <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
+      <a href="#experience" className="hover:text-cyan-400 transition">Experience</a>
+      <a href="#education" className="hover:text-cyan-400 transition">Education</a>
+      <a href="#contact" className="hover:text-cyan-400 transition">Contact</a>
+    </div>
+
+    <button
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      className="md:hidden text-white"
+    >
+      {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+    </button>
+  </div>
+
+  {mobileMenuOpen && (
+    <div className="md:hidden px-6 pb-5 flex flex-col gap-4 text-gray-300 text-sm">
+      <a onClick={() => setMobileMenuOpen(false)} href="#projects">Projects</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#publications">Publications</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#skills">Skills</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#experience">Experience</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#education">Education</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#contact">Contact</a>
+    </div>
+  )}
+</nav>
 
         {/* Hero */}
         <motion.section

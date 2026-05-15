@@ -204,7 +204,8 @@ function App() {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 hidden md:inline-flex items-center gap-2 bg-cyan-400 text-black px-5 py-3 rounded-full font-semibold shadow-[0_0_25px_rgba(34,211,238,0.45)] hover:bg-cyan-300 transition"
+          className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-cyan-400 text-black px-4 py-3 md:px-5 rounded-full font-semibold shadow-[0_0_25px_rgba(34,211,238,0.45)] hover:bg-cyan-300 transition"
+        
         >
           <FileText size={18} />
           Resume
@@ -219,13 +220,13 @@ function App() {
         </button>
 
         {/* Navbar */}
-        <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 mt-4 rounded-2xl bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_0_35px_rgba(34,211,238,0.08)]">
+        <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 mt-3 rounded-2xl bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_0_35px_rgba(34,211,238,0.08)] overflow-hidden">
           <div className="px-6 py-4 flex justify-between items-center">
             <h1 className="font-bold text-xl text-white">
               Himesh<span className="text-cyan-400">.</span>
             </h1>
 
-            <div className="hidden md:flex gap-6 text-sm text-gray-300">
+            <div className="flex gap-3 md:gap-6 text-xs md:text-sm text-gray-300 overflow-x-auto">
               <a href="#projects" className="hover:text-cyan-400 transition">
                 Projects
               </a>

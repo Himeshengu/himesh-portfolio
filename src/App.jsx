@@ -683,13 +683,11 @@ function App() {
               </div>
 
               <form
-                action="https://formsubmit.co/enguhimesh01@gmail.com"
-                method="POST"
-                className="space-y-5"
+              action="mailto:enguhimesh01@gmail.com"
+              method="POST"
+              encType="text/plain"
+              className="space-y-5"
               >
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="https://himesh-portfolio-ovxpm1h8s-himeshengu-s-projects.vercel.app/" />
 
                 <input
                   type="text"

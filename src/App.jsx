@@ -682,12 +682,7 @@ function App() {
                 />
               </div>
 
-              <form
-              action="mailto:enguhimesh01@gmail.com"
-              method="POST"
-              encType="text/plain"
-              className="space-y-5"
-              >
+              <form className="space-y-5">
 
                 <input
                   type="text"
@@ -710,12 +705,12 @@ function App() {
                   required
                   className="w-full bg-black/40 border border-zinc-800 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400 transition"
                 ></textarea>
-                <button
-                  type="submit"
-                  className="bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-300 transition shadow-[0_0_20px_rgba(34,211,238,0.35)]"
+                <a
+                href="mailto:enguhimesh01@gmail.com"
+                className="inline-block bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-300 transition shadow-[0_0_20px_rgba(34,211,238,0.35)]"
                 >
                   Send Message
-                </button>
+                  </a>
               </form>
             </div>
           </div>

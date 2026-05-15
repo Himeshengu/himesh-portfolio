@@ -214,8 +214,8 @@ function App() {
 
         {/* Theme Toggle */}
         <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="fixed bottom-6 left-6 z-50 hidden md:inline-flex items-center gap-2 border border-white/10 bg-black/40 backdrop-blur-2xl px-4 py-3 rounded-full hover:bg-white/10 transition"
+        onClick={() => setDarkMode(!darkMode)}
+        className="fixed bottom-6 left-6 z-50 inline-flex items-center gap-2 border border-white/10 bg-black/40 backdrop-blur-2xl px-4 py-3 rounded-full hover:bg-white/10 transition"
         >
           {darkMode ? <Sun size={18} /> : <Moon size={18} />}
         </button>

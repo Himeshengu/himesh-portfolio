@@ -688,6 +688,9 @@ function App() {
                 className="space-y-5"
               >
                 <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://himesh-portfolio-ovxpm1h8s-himeshengu-s-projects.vercel.app/" />
+
                 <input
                   type="text"
                   name="name"

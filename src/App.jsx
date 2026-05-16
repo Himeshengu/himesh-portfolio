@@ -18,6 +18,23 @@ import {
 
 const projects = [
   {
+    title: "AI RAG Document Assistant",
+    type: "Generative AI / RAG System",
+    desc: "Built an AI-powered Retrieval-Augmented Generation (RAG) assistant for intelligent document querying, semantic search, contextual response generation, and knowledge extraction using vector databases and LLM pipelines.",
+    tech: [
+      "Python",
+      "LangChain",
+      "ChromaDB",
+      "LLMs",
+      "FastAPI",
+      "Streamlit",
+      "RAG"
+    ],
+    github:
+      "https://github.com/Himeshengu/AI-RAG-Document-Assistant",
+  },
+
+  {
     title: "MedGAN Studio — Distributed GAN Inference System",
     type: "Full Stack Generative AI",
     desc: "Built a full-stack AI-powered medical imaging platform for synthetic MRI, CT Scan, X-Ray, and retinal image generation using distributed GAN inference pipelines, FastAPI microservices, React dashboards, and MongoDB Atlas cloud storage.",

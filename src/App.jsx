@@ -617,7 +617,7 @@ function App() {
               {
                 role: "Data Engineer",
                 company: "Northern Arizona University",
-                date: "Jul 2025 – Present",
+                date: "March 2025 – Present",
                 points: [
                   "Designed ETL pipelines in GCP for 250K+ records.",
                   "Reduced dashboard latency by 40%.",
@@ -625,16 +625,7 @@ function App() {
                   "Resolved 130+ data quality issues.",
                 ],
               },
-              {
-                role: "Data Engineer",
-                company: "Sodexo",
-                date: "Oct 2024 – Apr 2025",
-                points: [
-                  "Built Snowflake data marts for 1.2M+ records.",
-                  "Developed Tableau dashboards improving access by 30%.",
-                  "Automated ETL pipelines across AWS and Azure.",
-                ],
-              },
+
               {
                 role: "Data Engineer",
                 company: "Lead IT",
